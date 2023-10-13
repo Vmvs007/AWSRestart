@@ -28,7 +28,8 @@ horas=int(total_album_segundos/3600)
 minutos=int(total_album_segundos/60)-(horas*60)
 
 # calcular os segundos (tiro a tempor que já foi atribuido em horas e em minutos)
-segundos=int(total_album_segundos)-(horas*3600)-(minutos*60)
+segundos=total_album_segundos-(horas*3600)-(minutos*60)
 
 # apresentar o resultado formatado
 print(horas,":",minutos,":",segundos)
+
